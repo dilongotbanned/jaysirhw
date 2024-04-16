@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+//
+// Topic - Loops
+//
+// In these in-class activities you will demonstrate your understanding of loops.
+// Please review the directions for the program (below).  This will explain what the program is
+// supposed to do.  While much of the program has been provides, some parts of the program are 
+// missing.  The missing parts are indicated with question marks ("�").  Your goal is to update
+// the program by replacing all of the question marks with code which will make the program 
+// function properly.
+//
+// Assuming the ocean’s level is currently rising at about 1.6 millimeters per
+// year.  Write a function that is passed a number of years and then uses a loop
+// that calls the alert() function to display the total rise in ocean level for each.
+//
+// For example, if looking at the ocean level rise over 5 years the program would
+// display the following five alert with the values (don't worry about rounding and
+// formatting the output to look nice):
+//
+//		Year 1 - 1.6 millimeters
+//		Year 2 - 3.2 millimeters
+//		Year 3 - 4.8 millimeters
+//		Year 4 - 6.4 millimeters
+//		Year 5 - 8.0 millimeters
+//
+// When the loop ends the function will return the number of millimeters the ocean 
+// has risen during this period.  In this exampe, 
+//
+
+function oceanRise(numberOfYears) {
+
+/////////////////////////////////////////////////////////////////////////////////
+// Insert your code between here and the next comment block.  Do not alter     //
+// any code in any other part of this file.                                    //
+/////////////////////////////////////////////////////////////////////////////////
+
+	let totalRise = 0;
+	
+	for (let year = 1; year <= numberOfYears; year++) {
+		totalRise = totalRise + 1.6;
+		alert('Year ' + year + ' - ' + totalRise + ' millimeters');
+	}
+
+	return totalRise;
+	
+/////////////////////////////////////////////////////////////////////////////////
+// Insert your code between here and the previous comment block.  Do not alter //
+// any code in any other part of this file.                                    //
+/////////////////////////////////////////////////////////////////////////////////
+
+}
+
+let numberOfYears = prompt('Over how many years would you like to display the rising in ocean levels? ');
+
+alert('In the next ' + numberOfYears + ' years, the ocean will have risen ' + oceanRise(numberOfYears) + ' millimeters');
+
+</script>
+</body>
+</html>
